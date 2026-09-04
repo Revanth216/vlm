@@ -1,0 +1,15 @@
+cat << 'EOF' > .gitignore
+# Virtual Environment
+hackathon_env/
+
+# Large Datasets & Media
+Train and Test/
+*.mp4
+*.zip
+*.tar.gz
+
+# Python Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+EOF
