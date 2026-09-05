@@ -1,15 +1,38 @@
-cat << 'EOF' > .gitignore
-# Virtual Environment
-hackathon_env/
-
-# Large Datasets & Media
-Train and Test/
-*.mp4
-*.zip
-*.tar.gz
-
-# Python Caches
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+
+# Virtual environment
+hackathon_env/
+.venv/
+venv/
+
+# Model checkpoints / training artifacts
+ahc_vlm_lora_model/
+ahc_vlm_lora_model_balanced/
+unsloth_compiled_cache/
+
+# Training datasets / generated data
+train_windows.csv
+training_windows.csv
+val_windows.csv
+
+# Generated predictions / outputs
+predictions.json
+
+# Local video/data files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# IDE
+.vscode/
+
+# Python tooling
+.pytest_cache/
 .ipynb_checkpoints/
-EOF
+Train and Test/
+AHC Visual Intelligence Hackathon.pdf
+plan of action.png
